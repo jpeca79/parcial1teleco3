@@ -1,0 +1,15 @@
+$ORIGIN joshep.com.
+$TTL 3H
+@	IN SOA server.joshep.com. root@joshep.com. (
+					0	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+@	IN	NS	server.joshep.com.
+
+;host en la zona
+
+server	IN	A 	192.168.50.3
+www 	IN	CNAME	server
+parcial	IN	A	192.168.50.3
